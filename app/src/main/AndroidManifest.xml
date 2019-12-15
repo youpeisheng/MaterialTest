@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FruitActivity"></activity>
+        <activity android:name=".FruitActivity"
+            android:theme="@style/FruitActivityTheme"
+            >
+        </activity>
         <activity
             android:name=".MainActivity"
             android:label="Fruits">
@@ -18,18 +21,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
 
-                <category android:name="android.intent.category.HOME" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.MONKEY"/>
+<!--                <category android:name="android.intent.category.HOME" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.MONKEY"/>-->
             </intent-filter>
         </activity>
-        <!--开机广播接受者-->
-        <receiver android:name=".Receiver">
-            <intent-filter>
-                <!--注册开机广播地址-->
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-            </intent-filter>
-        </receiver>
+<!--        &lt;!&ndash;开机广播接受者&ndash;&gt;-->
+<!--        <receiver android:name=".Receiver">-->
+<!--            <intent-filter>-->
+<!--                &lt;!&ndash;注册开机广播地址&ndash;&gt;-->
+<!--                <action android:name="android.intent.action.BOOT_COMPLETED"/>-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
     </application>
 
 </manifest>
